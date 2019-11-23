@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7fdf8b2d-d3a3-4886-82e3-87346af3323e" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/MainApplicationClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/NodeModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/DoublyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <element signature="method#isEmpty#0;class#DoublyLinkedList#0" />
+                <element signature="method#size#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#addElement#0;n#DoublyLinkedList#0" />
+                <element signature="method#addElement#0;class#DoublyLinkedList#0" />
+                <element signature="method#addMedium#0;class#DoublyLinkedList#0" />
+                <element signature="method#addHigh#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#dequeue#0;n#DoublyLinkedList#0" />
+                <element signature="method#dequeue#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#delete#0;n#DoublyLinkedList#0" />
+                <element signature="method#delete#1;class#DoublyLinkedList#0" />
+                <element signature="method#checkingNodeClassCompatibility#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#delete#2;n#DoublyLinkedList#0" />
+                <element signature="method#delete#2;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#reassigningLastNodeVariables#0;n#DoublyLinkedList#0" />
+                <element signature="method#reassigningLastNodeVariables#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#getIndex#0;n#DoublyLinkedList#0" />
+                <element signature="method#getIndex#0;class#DoublyLinkedList#0" />
+                <element signature="method#gettingList#0;class#DoublyLinkedList#0" />
+                <element signature="n#!!doc;n#Node#0;n#DoublyLinkedList#0" />
+                <element signature="class#Node#0;class#DoublyLinkedList#0" />
+                <element signature="method#getDataPriority#0;class#Node#0;class#DoublyLinkedList#0" />
+                <element signature="method#detachNode#0;class#Node#0;class#DoublyLinkedList#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/QueueController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#includeNewPerson#0;class#QueueController#0" />
+                <element signature="method#delete#0;class#QueueController#0" />
+                <element signature="method#getPerson#0;class#QueueController#0" />
+                <element signature="method#deleteFromTail#0;class#QueueController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/RequestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="818">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/PeopleFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setAsAttended#0;class#PeopleFactory#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/MainApplicationClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/RestController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/FictionalClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/FictionalClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/priority/Priority.java" />
+        <option value="$PROJECT_DIR$/src/main/java/priority/Hierarchical.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/priority/Hierarchical.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/NodeModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/people/IDGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/DoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/people/PeopleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/people/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/priority/Priority.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/PeopleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/QueueController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/RequestController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ca_dsa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ca_dsa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ca_dsa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ca_dsa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ca_dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ca_dsa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ca_dsa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplicationClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="davimoraes2017322.MainApplicationClass" />
+      <module name="ca_dsa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="davimoraes2017322.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApplicationClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fdf8b2d-d3a3-4886-82e3-87346af3323e" name="Default Changelist" comment="" />
+      <created>1574286609482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574286609482</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07194245" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3297414" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Flutter Inspector" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32982844" />
+      <window_info anchor="right" id="Flutter Outline" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/FictionalClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/priority/Hierarchical.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/priority/Priority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/people/IDGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/people/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Person#1;class#Person#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/MainApplicationClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/NodeModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/immigrationList/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="method#isEmpty#0;class#DoublyLinkedList#0" />
+            <element signature="method#size#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#addElement#0;n#DoublyLinkedList#0" />
+            <element signature="method#addElement#0;class#DoublyLinkedList#0" />
+            <element signature="method#addMedium#0;class#DoublyLinkedList#0" />
+            <element signature="method#addHigh#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#dequeue#0;n#DoublyLinkedList#0" />
+            <element signature="method#dequeue#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#delete#0;n#DoublyLinkedList#0" />
+            <element signature="method#delete#1;class#DoublyLinkedList#0" />
+            <element signature="method#checkingNodeClassCompatibility#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#delete#2;n#DoublyLinkedList#0" />
+            <element signature="method#delete#2;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#reassigningLastNodeVariables#0;n#DoublyLinkedList#0" />
+            <element signature="method#reassigningLastNodeVariables#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#getIndex#0;n#DoublyLinkedList#0" />
+            <element signature="method#getIndex#0;class#DoublyLinkedList#0" />
+            <element signature="method#gettingList#0;class#DoublyLinkedList#0" />
+            <element signature="n#!!doc;n#Node#0;n#DoublyLinkedList#0" />
+            <element signature="class#Node#0;class#DoublyLinkedList#0" />
+            <element signature="method#getDataPriority#0;class#Node#0;class#DoublyLinkedList#0" />
+            <element signature="method#detachNode#0;class#Node#0;class#DoublyLinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/QueueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#includeNewPerson#0;class#QueueController#0" />
+            <element signature="method#delete#0;class#QueueController#0" />
+            <element signature="method#getPerson#0;class#QueueController#0" />
+            <element signature="method#deleteFromTail#0;class#QueueController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/controllers/PeopleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setAsAttended#0;class#PeopleFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/davimoraes2017322/rest/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ca_dsa</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
