@@ -3,31 +3,34 @@ package davimoraes2017322.people;
 import davimoraes2017322.priority.*;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 
 public class Person extends Hierarchical {
 
+    private long id;
     private String firstName;
     private String lastName;
-    private LocalDate arrivalDate;//maybe change the dataType
     private String passportNumber;
+    private String arrivalDate;//maybe change the dataType
     private Priority priority;
-    private long id;
-    private boolean attended = false;
+    private Status status = Status.WAITING;
 
     public Person(){
-        this.arrivalDate = LocalDate.now();
+        LocalDate now = LocalDate.now();
+        this.arrivalDate = now.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
         this.id = IDGenerator.getId();
     }
 
 
     public Person(String firstName, String lastName, String passportNumber, Priority priority){
-
+        LocalDate now = LocalDate.now();
         this.firstName = firstName;
         this.lastName = lastName;
         this.passportNumber = passportNumber;
         this.priority = priority;
-        this.arrivalDate = LocalDate.now();
+        this.arrivalDate = now.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
         this.id = IDGenerator.getId();
 
     }
@@ -48,7 +51,7 @@ public class Person extends Hierarchical {
         this.lastName = lastName;
     }
 
-    public LocalDate getArrivalDate() {
+    public String getArrivalDate() {
         return arrivalDate;
     }
 
@@ -68,8 +71,8 @@ public class Person extends Hierarchical {
 
     public long getId(){return this.id;}
 
-    public void setAttended(){ this.attended=!attended;}
+    public void setStatus(Status status){ this.status=status;}
 
-    public boolean getAttended(){return this.attended;}
+    public Status getStatus(){return this.status;}
 
 }
