@@ -2,6 +2,7 @@ package davimoraes2017322.rest;
 
 import davimoraes2017322.controllers.PeopleFactory;
 import davimoraes2017322.controllers.QueueController;
+import davimoraes2017322.people.Gender;
 import davimoraes2017322.people.Person;
 import davimoraes2017322.people.Status;
 import davimoraes2017322.priority.Priority;
@@ -19,10 +20,11 @@ public class RequestHandler {
             return "{\"message\":\"Missing one or more fields.\"}";
 
         Person person = PeopleFactory.createPerson(
-        body.get("name"),
-        body.get("surname"),
-        body.get("passport"),
-        Priority.getEnum(body.get("priority"))
+        body.get("firstName"),
+        body.get("lastName"),
+        body.get("passportNumber"),
+        Priority.getEnum(body.get("priority")),
+        Gender.getEnum(body.get("gender"))
         );
 
         if(person==null)
@@ -60,10 +62,12 @@ public class RequestHandler {
 
         PeopleFactory.editPerson(
                 person,
-                body.get("name"),
-                body.get("surname"),
-                body.get("passport"),
-                Status.getEnum(body.get("status")));
+                body.get("firstName"),
+                body.get("lastName"),
+                body.get("passportNumber"),
+                Status.getEnum(body.get("status")),
+                Gender.getEnum(body.get("gender"))
+                );
 
         return Utilities.getJSON(person);
 
@@ -106,7 +110,7 @@ public class RequestHandler {
         if(person==null)
             return "{\"message\":\"Object not found.\"}";
 
-        return "{\"position\":\""+queueController.delete(personId)+"\"}\"";
+        return "{\"deleted\":\""+queueController.delete(personId)+"\"}";
     }
 
     static String deleteGroup( String value) {
@@ -116,6 +120,6 @@ public class RequestHandler {
         if(amount<=0)
             return "{\"message\":\"Value has to be an integer.\"}";
 
-        return "{\"queue size\":\""+queueController.deleteAmount((int)amount)+"\"}\"";
+        return "{\"queue size\":\""+queueController.deleteAmount((int)amount)+"\"}";
     }
 }

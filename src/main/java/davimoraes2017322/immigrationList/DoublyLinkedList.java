@@ -63,7 +63,7 @@ public class DoublyLinkedList<E extends Hierarchical> {
         //this class
         return nodeToAdd;
     }
-
+//addMedium and addHigh will never take an empty queue
     private void addMedium(Node nodeToAdd) {
         ///a medium priority occupying the queue's head
         if (this.head.data.getPriority() == Priority.LOW) {
@@ -71,15 +71,18 @@ public class DoublyLinkedList<E extends Hierarchical> {
             this.head.previous = nodeToAdd;
             this.head = nodeToAdd;
         }
-        ///a medium priority occupying the next getPosition after the last high priority -
+        ///a medium priority occupying the next position after the last high priority -
         ///if the head is not LowPriority and lastMedium is null, the head is necessarily HighPriority
         else if (lastMedium == null /*&& lastHigh != null*/) {
             nodeToAdd.previous = lastHigh;
             nodeToAdd.next = lastHigh.next;
 
-            lastHigh.next.previous = nodeToAdd;
-            lastHigh.next = nodeToAdd;
+            if (lastHigh.next != null)
+                lastHigh.next.previous = nodeToAdd;
+            else
+                tail = nodeToAdd;
 
+            lastHigh.next = nodeToAdd;
         }
         ///newNode is defined as the lastMediumPriority
         else /*if (lastMedium != null)*/ {
@@ -119,9 +122,13 @@ public class DoublyLinkedList<E extends Hierarchical> {
         lastHigh = nodeToAdd;
     }
 
-    public E viewHead(){return head==null?null:head.data;}
+    public E viewHead() {
+        return head == null ? null : head.data;
+    }
 
-    public E viewTail(){return tail==null?null:tail.data;}
+    public E viewTail() {
+        return tail == null ? null : tail.data;
+    }
 
     /*
     (Amilcar)The user can remove the first person from the queue when this has been
@@ -181,8 +188,9 @@ public class DoublyLinkedList<E extends Hierarchical> {
         //we have to check all possibilities in order to do not loose the track
         //of the variables
         Node nodeToBeDeleted = checkingNodeClassCompatibility(node);
-        if(nodeToBeDeleted==null)
+        if (nodeToBeDeleted == null)
             return;
+
         if (this.head == nodeToBeDeleted)
             this.head = nodeToBeDeleted.next;
         if (this.tail == nodeToBeDeleted)
@@ -203,38 +211,36 @@ public class DoublyLinkedList<E extends Hierarchical> {
         size--;
     }
 
-    public Node checkingNodeClassCompatibility(NodeModel nodeToCheck){
+    public Node checkingNodeClassCompatibility(NodeModel nodeToCheck) {
         Node checkedNode;
-        try{
+        try {
             checkedNode = (Node) nodeToCheck;
-        }catch(ClassCastException ex){
+        } catch (ClassCastException ex) {
             return null;
         }
         return checkedNode;
     }
 
     /*
-    (Amilcar)The user can delete N number of records from the end of the queue.
+   Delete last element
      */
-    public void delete(int n) {
+    public Node deleteTail() {
 
-        Node current;
+        if(this.tail==null)
+            return null;
 
-        while (n > 0 && size > 0) {
+        Node current = this.tail;
 
-            current = this.tail;
-            this.tail = current.previous;
-            current.detachNode();
+        this.tail = current.previous;
+        current.detachNode();
 
-            n--;
-            size--;
-        }
-        ///better call it only at the end of the while
+        size--;
+//passing the new last node/tail
         reassigningLastNodeVariables(this.tail);
+        return current;
 
     }
 
-    //Better call this method at the end than calling delete(Node node) for each iterator
     //The function considers that the last node in the list (the tail) is the one being parsed
     private void reassigningLastNodeVariables(Node node) {
         ///updating lastHigh and also making sure that
@@ -259,7 +265,7 @@ public class DoublyLinkedList<E extends Hierarchical> {
         Node current = head;
         int index = 0;
 
-        if(data==null)
+        if (data == null||isEmpty())
             return -1;
         //keep the loop if the data is not that what we want
         while (data != current.data) {
@@ -276,14 +282,14 @@ public class DoublyLinkedList<E extends Hierarchical> {
         return index;
 
     }
-
-    public ArrayList<E> gettingList(){
+//I don't know if I gonna need this one. let's see
+    public ArrayList<E> gettingList() {
 
         ArrayList<E> fullList = new ArrayList<>();
 
         Node current = head;
 
-        while(current!=null){
+        while (current != null) {
             fullList.add(current.data);
             current = current.next;
         }
@@ -296,7 +302,7 @@ public class DoublyLinkedList<E extends Hierarchical> {
     //a node straight away by using the method delete(Node nodeToBeDeleted). The NodeModel
     //interface has only getters, so the attributes from the class Node can not be edited by a
     //class outside the list.
-    private class Node implements NodeModel<E>{
+    private class Node implements NodeModel<E> {
         //even if they are set as private, the list has access to them
         private Node previous;
         private Node next;
@@ -321,10 +327,10 @@ public class DoublyLinkedList<E extends Hierarchical> {
                 this.next.previous = this.previous;
             if (this.previous != null)
                 this.previous.next = this.next;
-            //TODO: Check if it is really necessary to make the node eligible to garbage collector
+            //TODO: Check if it is really necessary in order to make the node eligible to garbage collector
             this.next = null;
             this.previous = null;
-            this.data = null;
+            //this.data = null;
 
         }
 
@@ -335,3 +341,22 @@ public class DoublyLinkedList<E extends Hierarchical> {
     }
 
 }
+
+/*
+    public void delete(int n) {
+
+        Node current;
+
+        while (n > 0 && size > 0) {
+
+            current = this.tail;
+            this.tail = current.previous;
+            current.detachNode();
+            n--;
+            size--;
+        }
+
+        reassigningLastNodeVariables(this.tail);
+
+    }
+ */

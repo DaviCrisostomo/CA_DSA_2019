@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.Map;
 
 @RestController
-public class RequestController {
+public class HttpRequests {
 
-    RequestController(){}
+    HttpRequests(){}
 
     @CrossOrigin
     @RequestMapping("/call")

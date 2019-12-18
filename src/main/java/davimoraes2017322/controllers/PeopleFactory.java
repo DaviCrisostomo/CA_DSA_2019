@@ -1,31 +1,32 @@
 package davimoraes2017322.controllers;
 
+import davimoraes2017322.people.Gender;
 import davimoraes2017322.people.Person;
+import davimoraes2017322.people.Status;
 import davimoraes2017322.priority.Priority;
 
 public class PeopleFactory {
 
-    public static Person createPerson(String firstName, String lastName, String passportNumber, Priority priority) {
+    public static Person createPerson(String firstName, String lastName, String passportNumber, Priority priority, Gender gender) {
 
-            if(
-                nameValidation(firstName)&&
-                nameValidation(lastName)&&
-                passportNumber!=null&&
-                priority!=null)
-            return new Person(firstName, lastName, passportNumber, priority);
+        if ( nameValidation(firstName)&&nameValidation(lastName)&&passValidation(passportNumber)&&priority!=null){
+            return new Person(firstName, lastName, passportNumber, priority, gender);
+        }
 
         return null;
     }
 
     public static boolean nameValidation(String name) {
 
-        if (name.matches("[A-Z][a-z]*"))
-            return true;
-
-        return false;
+        return name.matches("[A-Z][a-z]*");
     }
 
-    public static void editPerson(Person person, String firstName, String lastName, String passportNumber, Priority priority) {
+    public static boolean passValidation(String passport){
+//Two capital letters and six numbers
+        return passport.matches("[A-Z]{2}\\d{6}");
+    }
+
+    public static void editPerson(Person person, String firstName, String lastName, String passportNumber, Status status, Gender gender) {
 
         if (person == null)
             return;
@@ -36,14 +37,17 @@ public class PeopleFactory {
             person.setLastName(lastName);
         if (passportNumber != null)
             person.setPassportNumber(passportNumber);
-        if (priority != null)
-            person.setPriority(priority);
+        if (status != null)
+            person.setStatus(status);
+        if(gender != null)
+            person.setGender(gender);
 
     }
 
-    public static void setAsAttended(Person person) {
+    public static void setAsCalled(Person person) {
         if(person!=null)
-            person.setAttended();
+            person.setStatus(Status.CALLED);
     }
+
 
 }

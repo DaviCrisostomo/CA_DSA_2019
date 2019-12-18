@@ -13,9 +13,10 @@ public class Person extends Hierarchical {
     private String firstName;
     private String lastName;
     private String passportNumber;
-    private String arrivalDate;//maybe change the dataType
+    private String arrivalDate;
     private Priority priority;
     private Status status = Status.WAITING;
+    private Gender gender;
 
     public Person(){
         LocalDate now = LocalDate.now();
@@ -24,7 +25,7 @@ public class Person extends Hierarchical {
     }
 
 
-    public Person(String firstName, String lastName, String passportNumber, Priority priority){
+    public Person(String firstName, String lastName, String passportNumber, Priority priority, Gender gender){
         LocalDate now = LocalDate.now();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -32,6 +33,7 @@ public class Person extends Hierarchical {
         this.priority = priority;
         this.arrivalDate = now.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL));
         this.id = IDGenerator.getId();
+        this.gender = gender;
 
     }
 
@@ -74,5 +76,9 @@ public class Person extends Hierarchical {
     public void setStatus(Status status){ this.status=status;}
 
     public Status getStatus(){return this.status;}
+
+    public void setGender(Gender gender){this.gender = gender;}
+
+    public Gender getGender(){return this.gender;}
 
 }

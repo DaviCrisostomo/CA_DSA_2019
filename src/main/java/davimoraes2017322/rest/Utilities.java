@@ -9,10 +9,11 @@ public class Utilities {
 
     static boolean bodyChecker(Map<String, String> body){
 
-        return (body.containsKey("name")
-                &&body.containsKey("surname")
-                &&body.containsKey("passport")
+        return (body.containsKey("firstName")
+                &&body.containsKey("lastName")
+                &&body.containsKey("passportNumber")
                 &&body.containsKey("priority")
+                &&body.containsKey("gender")
                 &&body.containsKey("status"));
 
     }
